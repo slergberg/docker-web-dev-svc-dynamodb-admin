@@ -6,7 +6,9 @@ RUN apk add --no-cache \
   curl
 
 # DynamoDB Admin
-RUN npm install -g dynamodb-admin
+ADD package.json package-lock.json /application/
+WORKDIR /application
+RUN npm install
 
 # Expose ports
 EXPOSE 8001
@@ -17,4 +19,4 @@ RUN chmod +x /usr/local/bin/docker-healthcheck
 HEALTHCHECK CMD docker-healthcheck
 
 # Startup
-ENTRYPOINT ["dynamodb-admin"]
+ENTRYPOINT ["/application/node_modules/.bin/dynamodb-admin"]

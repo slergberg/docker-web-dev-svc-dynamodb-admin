@@ -1,0 +1,17 @@
+{
+  "name": "@webdevsvc/dynamodb-admin",
+  "private": true,
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slergberg/docker-web-dev-svc-dynamodb-admin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/slergberg/docker-web-dev-svc-dynamodb-admin/issues"
+  },
+  "homepage": "https://github.com/slergberg/docker-web-dev-svc-dynamodb-admin",
+  "dependencies": {
+    "dynamodb-admin": "^3.1.3"
+  }
+}
