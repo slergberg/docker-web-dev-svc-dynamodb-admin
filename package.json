@@ -12,6 +12,6 @@
   },
   "homepage": "https://github.com/slergberg/docker-web-dev-svc-dynamodb-admin",
   "dependencies": {
-    "dynamodb-admin": "^3.2.0"
+    "dynamodb-admin": "^4.0.0"
   }
 }
