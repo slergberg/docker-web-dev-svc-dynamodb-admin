@@ -1,5 +1,5 @@
 # Base image
-FROM node:13.12.0-alpine
+FROM node:13.13.0-alpine
 
 # Base dependencies
 RUN apk add --no-cache \
